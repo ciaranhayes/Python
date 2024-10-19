@@ -1,0 +1,7 @@
+print('Welcome to the number checking model')
+number = int(input('Enter number here: \n'))
+
+if number%2 == 0:
+    print('Your number is even, hurra')
+else:
+    print('Your number is odd, I fear')
