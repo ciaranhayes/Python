@@ -1,0 +1,51 @@
+print('''
+
+           _ . - = - . _
+       . "  \  \   /  /  " .
+     ,  \                 /  .
+   . \   _,.--~=~"~=~--.._   / .
+  ;  _.-"  / \ !   ! / \  "-._  .
+ / ,"     / ,` .---. `, \     ". \\
+/.'   `~  |   /:::::\   |  ~`   '.\\
+\`.  `~   |   \:::::/   | ~`  ~ .'/
+ \ `.  `~ \ `, `~~~' ,` /   ~`.' /
+  .  "-._  \ / !   ! \ /  _.-"  .
+   ./    "=~~.._  _..~~=`"    \.
+     ,/         ""          \,
+       . _/             \_ . 
+          " - ./. .\. - "
+''')
+print("Welcome to The Rock, let's begin your adventure.")
+print("Your mission is to find the eye.")
+
+first_choice= input('You have landed on the rock, before you are two paths. \nShall you go left or right?\n')
+
+if first_choice == 'right':
+    print('The way was dark and you made a misplaced step. \nYou have fallen off a ledge. \nGame Over. ')
+elif first_choice == 'left':
+    print('You have made your way through the path.\nBut now you find yourself by a lake, the water is too cold to swim in.\n')
+
+    second_choice = input('Shall you wait a boat to course or attempt the swim? \nswim or wait\n')
+
+    if second_choice == 'swim':
+        print('The water was too cold, you could not make it. \nGame over')
+    elif second_choice == 'wait':
+        print('You made it across the lake, as you step off the boat you see \nsomething in the distance.')
+        print('Before you now stands three doors. \nYou may only chose one and maybe find the eye.')
+
+        third_choice = str(input('Which door shall you choose? 1, 2 or 3?\n'))
+
+        if third_choice == '1':
+            print('You have chosen the first door. Behind it you found the abyss.\nAs you stared into the abyss the abyss started back and you were consumed.\nGame Over.')
+        elif third_choice == '2':
+            print('You have chosen the second door.\nBefore you now stands the eye in all her radience.\nYou win!')
+        elif third_choice == '3':
+            print('You have chosen the third door. As you ventured inside the door locked.\nThere is no escape and you will soon perish. \nGame Over.')
+        else:
+            print('Please enter a valid input: 1, 2 or 3')
+
+    else:
+        print('Please enter a valid input: swim or wait')
+        
+else:
+    print('Please enter a valid input: right or left')
